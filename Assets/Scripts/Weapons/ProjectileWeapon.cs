@@ -17,7 +17,6 @@ public class ProjectileWeapon : MonoBehaviour
     {
         var projectileGO = Instantiate(weaponData.projectilePrefab, weaponSlot.position, pivot.transform.rotation);
         var projectileComp = projectileGO.AddComponent<Projectile>();
-        projectileComp.Damage = weaponData.baseDamage;
-        projectileComp.Speed = weaponData.projectileSpeed;
+        projectileComp.WeaponData = weaponData;
     }
 }

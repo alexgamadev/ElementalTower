@@ -52,6 +52,6 @@ public class Timer : MonoBehaviour
         int msec = time % 1000;
         int sec = (int)(time / 1000 % 60);
         int min = (int)(time / (1000 * 60));
-        return string.Format("{0:00}:{1:00}:{2:00}", min, sec, msec);
+        return string.Format("{0:00}:{1:00}:{2:000}", min, sec, msec);
     }
 }
